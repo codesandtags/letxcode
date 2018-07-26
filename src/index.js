@@ -2,6 +2,13 @@ import _ from 'lodash';
 import './style.css';
 import Icon from './assets/images/github-logo.png';
 
+import * as header from './components/header';
+import * as dashboard from './components/dashboard';
+import * as jobDetails from './components/job-details';
+import * as jobResults from './components/job-results';
+import * as jobSearch from './components/job-search';
+import * as jobSummary from './components/job-summary';
+
 function component() {
   var element = document.createElement('div');
 
