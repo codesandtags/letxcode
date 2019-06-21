@@ -5,19 +5,23 @@
   "private": "true",
   "main": "index.js",
   "scripts": {
+    "start": "http-server dist",
     "build": "npx webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.10"
+    "lodash": "4.17.10"
   },
   "devDependencies": {
     "css-loader": "^1.0.0",
-    "file-loader": "^1.1.11",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.16.2",
-    "webpack-cli": "^3.1.0"
+    "file-loader": "1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "style-loader": "0.21.0",
+    "webpack": "4.16.2",
+    "webpack-cli": "3.1.0"
   }
 }
