@@ -1,0 +1,12 @@
+html {
+  font-size: 62.5%; // 1 rem = 16px; 10px/16px = 62.5%
+  height: 100%;
+
+  @include respond(tablet-landscape) {
+    font-size: 75%; // 1 rem = 16px; 12px/16px = 75%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 100%;
+  }
+}

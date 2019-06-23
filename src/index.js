@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import './style.css';
+import './styles.scss';
 import Icon from './assets/images/github-logo.png';
 
 import * as header from './components/header';
