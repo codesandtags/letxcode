@@ -1,7 +1,22 @@
 @import 'utils/variables';
-@import 'utils/mixins';
+
+@import 'mixins/vendor-prefixes';
+@import 'mixins/opacity';
+@import 'mixins/buttons';
+@import 'mixins/responsive';
 
 @import 'base/reset';
 @import 'base/typography';
 
 @import 'layout/container';
+@import 'layout/navigation';
+@import 'layout/main';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'vendors/material-icons';
+
+@import 'components/button';
+@import 'components/search-bar';
+
+@import 'themes/theme';

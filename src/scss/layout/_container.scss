@@ -10,3 +10,15 @@ html {
     font-size: 100%;
   }
 }
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: $max-width-container;
+  margin: auto;
+}

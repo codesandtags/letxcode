@@ -1,0 +1,37 @@
+.search-bar {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  max-width: 35rem;
+  display: flex;
+  justify-content: center;
+
+
+  &__input {
+    background-color: $color-white;
+    border: none;
+    border-radius: 2rem;
+    color: $color-black;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 30rem;
+    transition: max-width .5s ease-in;
+
+    &:focus {
+      max-width: 32rem;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    position: absolute;
+    right: 1.5rem;
+    top: .9rem;
+    border: 0;
+  }
+}
