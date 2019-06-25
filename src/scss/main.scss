@@ -1,12 +1,14 @@
 @import 'utils/variables';
 
+@import 'base/reset';
+@import 'base/typography';
+
 @import 'mixins/vendor-prefixes';
 @import 'mixins/opacity';
 @import 'mixins/buttons';
 @import 'mixins/responsive';
-
-@import 'base/reset';
-@import 'base/typography';
+@import 'mixins/card';
+@import 'mixins/spin';
 
 @import 'layout/container';
 @import 'layout/navigation';
@@ -18,5 +20,7 @@
 
 @import 'components/button';
 @import 'components/search-bar';
+@import 'components/card';
+@import 'components/job-summary';
 
 @import 'themes/theme';

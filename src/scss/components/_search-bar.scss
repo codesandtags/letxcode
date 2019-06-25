@@ -2,7 +2,7 @@
   margin: auto;
   position: relative;
   width: 100%;
-  max-width: 35rem;
+  max-width: 50rem;
   display: flex;
   justify-content: center;
 
@@ -10,28 +10,36 @@
   &__input {
     background-color: $color-white;
     border: none;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     color: $color-black;
     word-wrap: break-word;
     outline: none;
     display: flex;
     flex: 100%;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 1rem 3rem 1rem 1rem;
+    font-size: 2.4rem;
     width: 100%;
     max-width: 30rem;
-    transition: max-width .5s ease-in;
+    transition: max-width .3s ease-in;
 
     &:focus {
       max-width: 32rem;
+    }
+
+    @include respond(tablet-landscape) {
+      max-width: 45rem;
+
+      &:focus {
+        max-width: 50rem;
+      }
     }
   }
 
   &__button {
     background-color: transparent;
     position: absolute;
-    right: 1.5rem;
-    top: .9rem;
+    right: 4rem;
+    top: 1.2rem;
     border: 0;
   }
 }

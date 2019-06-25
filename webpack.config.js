@@ -48,5 +48,17 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     })
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000,
+    headers: {
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': '*',
+      'X-Content-Type-Options': 'nosniff',
+      'Origin': 'X-Requested-With'
+    }
+  }
 };

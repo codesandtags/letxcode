@@ -57,25 +57,25 @@ a.button {
 // Alternate buttons
 // --------------------------------------------------
 
-.button-default {
+.button--default {
   @include button-variant($button-default-color, $button-default-bg, $button-default-border);
 }
-.button-primary {
+.button--primary {
   @include button-variant($button-primary-color, $button-primary-bg, $button-primary-border);
 }
 // Success appears as green
-.button-success {
+.button--success {
   @include button-variant($button-success-color, $button-success-bg, $button-success-border);
 }
 // Info appears as blue-green
-.button-info {
+.button--info {
   @include button-variant($button-info-color, $button-info-bg, $button-info-border);
 }
 // Warning appears as orange
-.button-warning {
+.button--warning {
   @include button-variant($button-warning-color, $button-warning-bg, $button-warning-border);
 }
 // Danger and error appear as red
-.button-danger {
+.button--danger {
   @include button-variant($button-danger-color, $button-danger-bg, $button-danger-border);
 }
