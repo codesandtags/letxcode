@@ -45,7 +45,7 @@ export default class JobSummary extends Component {
     document.querySelector(selector).appendChild(card);
   }
 
-  truncateText(text, MAX_CHARACTERS = 190) {
+  truncateText(text, MAX_CHARACTERS = 140) {
     if (text) {
       return text.substr(0, MAX_CHARACTERS) + '...';
     }

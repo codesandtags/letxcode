@@ -6,6 +6,12 @@
   display: flex;
   justify-content: center;
 
+  &__label {
+    position: absolute;
+    font-size: 1.4rem;
+    left: 45%;
+    top: -2rem;
+  }
 
   &__input {
     background-color: $color-white;

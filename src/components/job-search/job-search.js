@@ -18,19 +18,26 @@ export class JobSearch extends Component {
   render() {
     const selector = '.header'
     const template = `
-      <div class="search-bar">
-          <input
-            class="search-bar__input"
-            type="input"
-            name="search"
-            maxlength="15"
-            placeholder="Front, JavaScript, DevOps...">
-          <button
-            class="search-bar__button"
-            type="button"
-            name="button" >
-            <i class="material-icons">search</i>
-          </button>
+      <div class="brand">Let's Coding</div>
+      <form class="search-bar" role="form">
+        <label
+          aria-labelledby="search"
+          class="search-bar__label"
+          for="search">Search</label>
+        <input
+          aria-required="true"
+          class="search-bar__input"
+          type="input"
+          id="search"
+          name="search"
+          maxlength="15"
+          placeholder="Front, JavaScript, DevOps...">
+        <button
+          class="search-bar__button"
+          type="button"
+          name="button" >
+          <i class="material-icons">search</i>
+        </button>
       </div>
     `;
 
@@ -49,7 +56,7 @@ export class JobSearch extends Component {
 
   onSearchKey() {
     this.showDefault();
-    
+
     if (this.searchBarInput.value &&
         this.searchBarInput.value.length >= App.api.MIN_CHARACTERS) {
       this.showLoader();

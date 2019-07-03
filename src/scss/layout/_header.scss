@@ -3,6 +3,12 @@
   color: $color-light;
   height: 20rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.brand {
+  color: #fcce06;
+  font-size: 3rem;
 }

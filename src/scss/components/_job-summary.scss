@@ -1,7 +1,11 @@
 .job-summary-container {
   display: flex;
   flex-flow: wrap row;
-  justify-content: space-between;
+  justify-content: center;
+
+  @include respond(tablet-landscape) {
+    justify-content: space-between;
+  }
 }
 
 .job-summary-loading {
@@ -26,12 +30,16 @@
   @include card(1);
   padding: 1rem;
   width: 100%;
-  max-width: 40rem;
+  max-width: 70rem;
   height: 100%;
   min-height: 30rem;
   max-height: 30rem;
   margin: 1rem 0;
   background-color: white;
+
+  @include respond(tablet-landscape) {
+    max-width: 40rem;
+  }
 
   &__header {
     padding: 1rem 0;
