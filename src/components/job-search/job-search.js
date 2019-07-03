@@ -23,7 +23,7 @@ export class JobSearch extends Component {
         <label
           aria-labelledby="search"
           class="search-bar__label"
-          for="search">Search</label>
+          for="search">Search your dreamed job ❤️</label>
         <input
           aria-required="true"
           class="search-bar__input"
@@ -31,6 +31,7 @@ export class JobSearch extends Component {
           id="search"
           name="search"
           maxlength="15"
+          autofocus
           placeholder="Front, JavaScript, DevOps...">
         <button
           class="search-bar__button"

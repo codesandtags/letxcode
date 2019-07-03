@@ -5,12 +5,14 @@
   max-width: 50rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
 
   &__label {
-    position: absolute;
-    font-size: 1.4rem;
-    left: 45%;
-    top: -2rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
   }
 
   &__input {
@@ -23,29 +25,20 @@
     display: flex;
     flex: 100%;
     padding: 1rem 3rem 1rem 1rem;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     width: 100%;
-    max-width: 30rem;
     transition: max-width .3s ease-in;
 
     &:focus {
-      max-width: 32rem;
-    }
 
-    @include respond(tablet-landscape) {
-      max-width: 45rem;
-
-      &:focus {
-        max-width: 50rem;
-      }
     }
   }
 
   &__button {
     background-color: transparent;
     position: absolute;
-    right: 4rem;
-    top: 1.2rem;
+    right: 2rem;
+    top: 5.5rem;
     border: 0;
   }
 }

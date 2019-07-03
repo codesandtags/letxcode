@@ -8,3 +8,20 @@
 *::after {
   box-sizing: border-box;
 }
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+a,
+a:active,
+a:visited,
+a:default {
+  text-decoration: none;
+  border-bottom: .1rem dashed $color-light;
+  color: $color-black;
+}
+
+a:hover {
+  color: $color-primary-dark;
+}

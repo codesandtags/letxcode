@@ -16,9 +16,13 @@ export default class JobSummary extends Component {
         <div class="job-summary__header">
           <div class="job-summary__heading">
             <p class="job-summary__title">${this.summary.title}</p>
+            <p class="job-summary__type">
+              <i class="material-icons">watch_later</i>
+              ${this.summary.type}
+            </p>
             <p class="job-summary__job">
               <i class="material-icons">business</i>
-              ${this.summary.type} / ${this.summary.company}
+              <a href="${this.summary.company_url}" target="_blank">${this.summary.company}</a>
             </p>
             <p class="job-summary__location">
               <i class="material-icons">location_on</i>
@@ -29,12 +33,20 @@ export default class JobSummary extends Component {
               ${this.summary.created_at}
             </p>
           </div>
+          <div class="job-summary__logo">
+            <img src="${this.summary.company_logo}" alt="company logo"/>
+          </div>
         </div>
         <div class="job-summary__description">
           ${this.truncateText(this.summary.description)}
         </div>
         <div class="job-summary__actions">
-          <button class="button button--primary" type="button" name="button">Apply</button>
+          <a
+            href="${this.summary.url}"
+            target="_blank"
+            class="button button--primary"
+            type="button"
+            name="button">Apply</a>
           <button class="button button--info" type="button" name="button">See More</button>
         </div>
     `;

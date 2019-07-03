@@ -32,8 +32,7 @@
   width: 100%;
   max-width: 70rem;
   height: 100%;
-  min-height: 30rem;
-  max-height: 30rem;
+  min-height: 35rem;
   margin: 1rem 0;
   background-color: white;
 
@@ -43,6 +42,19 @@
 
   &__header {
     padding: 1rem 0;
+    display: flex;
+  }
+
+  &__heading {
+    flex: 70%;
+  }
+
+  &__logo {
+    flex: 20%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__title {
@@ -52,7 +64,7 @@
     height: 4rem;
   }
 
-  &__location, &__job, &__created {
+  &__location, &__type, &__job, &__created {
     font-size: 1.4rem;
     display: flex;
     align-items: center;
