@@ -108,7 +108,15 @@ export class JobSearch extends Component {
 
     container.innerHTML = `
       <div class="job-summary-loading">
-        <img src="https://www.myamcat.com/blog/wp-content/uploads/2017/08/job-search-remotive-home.png" alt="" width="60%">
+        <img
+          src="https://cdn2.iconfinder.com/data/icons/atrous/512/search_magnifying_glass_find-64.png"
+          srcset="https://cdn2.iconfinder.com/data/icons/atrous/512/search_magnifying_glass_find-128.png 600w,
+          https://cdn2.iconfinder.com/data/icons/atrous/512/search_magnifying_glass_find-256.png 900w,
+          https://cdn2.iconfinder.com/data/icons/atrous/512/search_magnifying_glass_find-512.png 1000w"
+          sizes="(min-width: 600px) 80vw,
+          (min-width: 1000px) 60vw,
+          80vw"
+          alt="Search Image">
       </div>
     `;
   }
