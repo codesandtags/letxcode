@@ -3,3 +3,17 @@
   color: $color-light;
   padding: 1rem;
 }
+
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  background: $color-black;
+  color: $color-light;
+  padding: 1rem;
+  z-index: 100;
+
+  &:focus {
+    top: 0;
+  }
+}

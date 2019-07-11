@@ -22,7 +22,10 @@ export default class JobSummary extends Component {
             </p>
             <p class="job-summary__job">
               <i class="material-icons">business</i>
-              <a href="${this.summary.company_url}" target="_blank">${this.summary.company}</a>
+              <a
+                role="link"
+                href="${this.summary.company_url}"
+                target="_blank">${this.summary.company}</a>
             </p>
             <p class="job-summary__location">
               <i class="material-icons">location_on</i>
@@ -42,12 +45,17 @@ export default class JobSummary extends Component {
         </div>
         <div class="job-summary__actions">
           <a
+            role="link"
             href="${this.summary.url}"
             target="_blank"
             class="button button--primary"
-            type="button"
             name="button">Apply</a>
-          <button class="button button--info" type="button" name="button">See More</button>
+          <a
+            role="link"
+            href="${this.summary.url}"
+            target="_blank"
+            class="button button--info"
+            name="button">See More</a>
         </div>
     `;
     const card = document.createElement('div');

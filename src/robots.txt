@@ -1,0 +1,10 @@
+# Regla 1
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+# Regla 2
+User-agent: *
+Allow: /
+
+# TODO: Add Sitemap
+# Sitemap: http://www.example.com/sitemap.xml

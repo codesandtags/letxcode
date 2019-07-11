@@ -35,6 +35,7 @@ export class JobSearch extends Component {
           placeholder="Front, JavaScript, DevOps...">
         <button
           class="search-bar__button"
+          role="button"
           type="button"
           name="button" >
           <i class="material-icons">search</i>
