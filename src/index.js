@@ -8,12 +8,22 @@ import * as jobSearch from './components/job-search';
 import * as jobSummary from './components/job-summary';
 
 const search = new jobSearch.JobSearch();
+addServiceWorker();
 
 /**
- * @todo Add Service Worker
- * @body It's necessary to add a Service Worker to enable the power of the
- * Progressive Web Applications
+ * Progressive Web Applications.
+ * 1. Register of service worker.
  **/
 function addServiceWorker() {
-  // TODO: Add service worker logic here.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => {
+          console.log('Service worker registered! 😎', reg);
+        })
+        .catch(err => {
+          console.log('😥 Service worker registration failed: ', err);
+        });
+    });
+  }
 }

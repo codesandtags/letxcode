@@ -51,7 +51,8 @@ module.exports = {
     }),
     new CopyPlugin([
       { from: 'src/assets', to: 'assets' },
-      { from: 'src/robots.txt', to: '' }
+      { from: 'src/robots.txt', to: '' },
+      { from: 'src/sw.js', to: '' }
     ]),
   ],
   devServer: {
