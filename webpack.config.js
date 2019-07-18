@@ -21,9 +21,8 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-            "style-loader", // creates style nodes from JS strings
             MiniCssExtractPlugin.loader, 'css-loader', // translates CSS into CommonJS
-            "sass-loader" // compiles Sass to CSS, using Node Sass by default
+            'sass-loader' // compiles Sass to CSS, using Node Sass by default
         ]
       },
       {
@@ -47,11 +46,12 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
-      chunkFilename: "[id].css"
+      chunkFilename: '[id].css',
     }),
     new CopyPlugin([
       { from: 'src/assets', to: 'assets' },
       { from: 'src/robots.txt', to: '' },
+      { from: 'src/manifest.json', to: '' },
       { from: 'src/sw.js', to: '' }
     ]),
   ],

@@ -18,29 +18,32 @@ export class JobSearch extends Component {
   render() {
     const selector = '.header'
     const template = `
-      <div class="brand">Let's Coding</div>
-      <form class="search-bar" role="form">
-        <label
-          aria-labelledby="search"
-          class="search-bar__label"
-          for="search">Search your dreamed job ❤️</label>
-        <input
-          aria-required="true"
-          class="search-bar__input"
-          type="input"
-          id="search"
-          name="search"
-          maxlength="15"
-          autofocus
-          placeholder="Front, JavaScript, DevOps...">
-        <button
-          class="search-bar__button"
-          role="button"
-          type="button"
-          name="button" >
-          <i class="material-icons">search</i>
-        </button>
-      </div>
+    <img src="/assets/images/icons/icon-128x128.png"
+      class="brand__logo"
+      alt="Letxcode logo">
+    <div class="brand">Let's Coding</div>
+    <form class="search-bar" role="form">
+      <label
+        aria-labelledby="search"
+        class="search-bar__label"
+        for="search">Search your dreamed job ❤️</label>
+      <input
+        aria-required="true"
+        class="search-bar__input"
+        type="input"
+        id="search"
+        name="search"
+        maxlength="15"
+        autofocus
+        placeholder="Front, JavaScript, DevOps...">
+      <button
+        class="search-bar__button"
+        role="button"
+        type="button"
+        name="button" >
+        <i class="material-icons">search</i>
+      </button>
+    </form>
     `;
 
     this.renderTemplate(selector, template);
@@ -110,10 +113,10 @@ export class JobSearch extends Component {
     container.innerHTML = `
       <div class="job-summary-loading">
         <img
-          src="https://cdn2.iconfinder.com/data/icons/atrous/512/search_magnifying_glass_find-64.png"
-          srcset="https://cdn2.iconfinder.com/data/icons/atrous/512/search_magnifying_glass_find-128.png 600w,
-          https://cdn2.iconfinder.com/data/icons/atrous/512/search_magnifying_glass_find-256.png 900w,
-          https://cdn2.iconfinder.com/data/icons/atrous/512/search_magnifying_glass_find-512.png 1000w"
+          src="https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph-1/2048/5347_-_Github-64.png"
+          srcset="https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph-1/2048/5347_-_Github-128.png 600w,
+          https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph-1/2048/5347_-_Github-256.png 900w,
+          https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph-1/2048/5347_-_Github-512.png 1000w"
           sizes="(min-width: 600px) 80vw,
           (min-width: 1000px) 60vw,
           80vw"

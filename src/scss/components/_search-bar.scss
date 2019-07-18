@@ -1,5 +1,5 @@
 .search-bar {
-  margin: auto;
+  margin: 2rem auto;
   position: relative;
   width: 100%;
   max-width: 50rem;
@@ -28,6 +28,7 @@
     font-size: 2.2rem;
     width: 100%;
     transition: max-width .3s ease-in;
+    box-shadow: 0 2rem 2rem rgba(0,0,0,.2);
 
     &:focus {
 
@@ -38,7 +39,7 @@
     background-color: transparent;
     position: absolute;
     right: 2rem;
-    top: 6rem;
+    top: 2rem;
     border: 0;
   }
 }
